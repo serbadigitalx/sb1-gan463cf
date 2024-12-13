@@ -9,7 +9,7 @@ import PrivacyPage from './pages/PrivacyPage';
 import ContactPage from './pages/ContactPage';
 import BantuanDetailPage from './pages/bantuan/BantuanDetailPage';
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Layout>
@@ -20,11 +20,9 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/bantuan/:id" element={<BantuanDetailPage />} />
+          <Route path="/bantuan/:slug" element={<BantuanDetailPage />} />
         </Routes>
       </Layout>
     </Router>
   );
 }
-
-export default App;
