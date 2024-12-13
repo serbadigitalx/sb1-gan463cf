@@ -4,6 +4,9 @@ import Layout from './components/layout/Layout';
 import WelcomePage from './components/WelcomePage';
 import UserForm from './components/UserForm';
 import ResultsPage from './components/ResultsPage';
+import AboutPage from './pages/AboutPage';
+import PrivacyPage from './pages/PrivacyPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
           <Route path="/" element={<WelcomePage />} />
           <Route path="/form" element={<UserForm />} />
           <Route path="/results" element={<ResultsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
     </Router>
