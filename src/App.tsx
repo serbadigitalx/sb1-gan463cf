@@ -7,6 +7,7 @@ import ResultsPage from './components/ResultsPage';
 import AboutPage from './pages/AboutPage';
 import PrivacyPage from './pages/PrivacyPage';
 import ContactPage from './pages/ContactPage';
+import BantuanDetailPage from './pages/bantuan/BantuanDetailPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/bantuan/:id" element={<BantuanDetailPage />} />
         </Routes>
       </Layout>
     </Router>
