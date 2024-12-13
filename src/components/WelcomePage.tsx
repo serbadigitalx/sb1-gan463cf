@@ -4,7 +4,7 @@ import TrendingBantuan from './home/TrendingBantuan';
 
 export default function WelcomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col">
       <Hero />
       <TrendingBantuan />
     </div>
